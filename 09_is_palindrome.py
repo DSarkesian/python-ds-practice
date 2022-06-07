@@ -21,3 +21,10 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    # [::-1] reverses the list
+
+    # are able to compare lists directly
+    if phrase == phrase[::-1]:
+        return True
+    else:
+        return False

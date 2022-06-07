@@ -11,3 +11,16 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    mostfreqNum = 0
+    maxCount = 0
+    counter = {}
+    for num in nums:
+        if num in counter:
+            counter[num] += 1
+        else:
+            counter[num] = 1
+    for num in counter:
+        counter[num] > maxCount
+        maxCount = counter[num]
+        mostfreqNum = num
+    return mostfreqNum
